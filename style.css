@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Montserrat' Sans-Serif;
+    width: 100%;
+    height: 100%;
+    background: hsl(30, 38%, 92%);
+    scroll-behavior: smooth;
+}
+
+.container-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    height: 90vh;
+    width: 60%;
+    align-self: center;
+    margin: 1.5em;
+}
+
+.product {
+    width: 50%;
+    background-image: url(./images/image-product-desktop.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.product-dk {
+    display: none;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.product-description {
+    width: 50%;
+    background: white;
+    height: auto;
+    padding: 2em;
+    position: relative;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+p.pf {
+    padding: 1em 0 1em 0.3em;
+    letter-spacing: 0.3rem;
+    font-weight: 200;
+}
+
+.product-description h1 {
+    line-height: 1em;
+    font-size: 3.5em;
+    padding: 0 0.5em 0.2em 0;
+}
+
+.pf-note {
+    padding: 1em 1.8em 1.2em 0;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    font-weight: 200;
+}
+
+p.st {
+    display: flex;
+    font-family: 'Fraunces' serif;
+}
+
+
+p.st span.np {
+    font-size: 3.2em;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Montserrat' Sans-Serif;
+    font-weight: bold;
+    padding-right: 1rem;
+
+}
+
+p.st span.op {
+    text-align: middle;
+    text-decoration: line-through;
+    font-size: 1.5em;
+    font-weight: 200;
+    padding-top: 0.7em;
+}
+
+.button {
+    margin: 1.5em 0.5rem;
+    padding: 0.8em 5.8em;
+    border: 0;
+    border-radius: 0.4rem;
+    background: hsl(158, 36%, 37%);
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+}
+
+.button img {
+    padding-right: 0.4em;
+}
+
+.button:hover {
+    background: hsl(158, 36%, 20%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .button {
+        margin: 1em 0.3rem;
+        padding: 0.8em 5.1em;
+    }
+
+    .pf-note {
+        padding: 1em 0.8em 1em 0;
+        font-size: 1.4em;
+    }
+
+    .container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .product-description h1 {
+        padding: 0 0 0.2em 0;
+    }
+     
+    .button {
+        margin: 1em 0.3rem;
+        padding: 0.8em 4.5em;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        margin: 1em 0;
+        height: auto;
+    }
+
+    .product {
+        display: none;
+    }
+
+    .product-description {
+        height: auto;
+        width: 100%;
+        padding: 2.5em;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0px;
+    }
+
+    .product-dk {
+        display: block;
+        background-image: url(./images/image-product-mobile.jpg);
+        height: 50vh;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .product-description h1 {
+        font-size: 3.5em;
+        padding: 0 2em 0 0;
+    }
+
+    .pf-note {
+        font-size: 2.5em;
+        padding: 1em 1.5em 1em 0;
+    }
+
+    p.st span.np {
+        font-size: 3.5em;
+    }
+
+    p.st span.op {
+        font-size: 1.5em;
+        padding-top: 0.8em;
+    }
+
+    p.pf {
+        padding: 1.5em 0;
+        font-size: 1em;
+    }
+
+    .button {
+        margin: 1em 0 0.5em 0;
+        padding: 0.6em 5em;
+        font-size: 1.8em;
+    }
+
+    .attribution {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .product-description h1 {
+        font-size: 3.5em;
+        padding: 0 0.1em 0 0;
+    }
+
+    .pf-note {
+        font-size: 2.5em;
+        padding: 1em 0.5em 1em 0;
+    }
+
+    .button {
+        margin: 1em 0 0.5em 0;
+        padding: 0.5em 3.5em;
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        margin: 1em 0;
+        height: auto;
+    }
+
+    .product-description h1 {
+        font-size: 3em;
+        padding: 0 0 0 0;
+    }
+
+    .pf-note {
+        font-size: 1.5em;
+        padding: 1em 0 1em 0;
+    }
+
+    p.st span.np {
+        font-size: 3em;
+    }
+
+    p.st span.op {
+        font-size: 1.2em;
+        padding-top: 1em;
+    }
+
+    .button {
+        margin: 1em 0 0.5em 0;
+        padding: 0.5em 3em;
+        font-size: 1.4em;
+    }
+}
